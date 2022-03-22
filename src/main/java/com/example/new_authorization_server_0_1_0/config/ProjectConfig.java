@@ -76,7 +76,7 @@ public class ProjectConfig {
 
     @Bean
     public ProviderSettings providerSettings() {
-        var ps = new ProviderSettings();
+        ProviderSettings ps = new ProviderSettings();
         ps = ps.issuer("http://new-channel-oidc.com");
         ps = ps.jwkSetEndpoint("/certs");
         return ps;
