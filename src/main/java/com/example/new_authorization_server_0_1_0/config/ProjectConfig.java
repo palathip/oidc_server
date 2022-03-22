@@ -58,7 +58,7 @@ public class ProjectConfig {
                 .clientSecret("iam-secret")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
-                .redirectUri("http://localhost:8080/oidc/decoder/token")
+                .redirectUri("http://localhost:8080/api/v1/auth/oidc/decoder/token")
                 .scope(OidcScopes.OPENID)
                 .scope("read")
                 .scope("write")
